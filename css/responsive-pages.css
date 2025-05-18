@@ -1,0 +1,191 @@
+/* Estilos responsivos para las páginas de servicios y proyectos */
+
+/* Estilos compartidos para ambas páginas */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .page-header {
+        padding: 100px 0 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .page-header {
+        padding: 80px 0 40px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-intro {
+        font-size: 1.1rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cta-section .cta-content {
+        padding: 40px;
+    }
+}
+
+/* Estilos responsivos para la página de servicios */
+@media (max-width: 992px) {
+    .services-detail .service-item {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    
+    .service-icon {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    
+    .service-features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .service-features .feature {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .tech-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-detail .service-item {
+        padding: 25px;
+    }
+    
+    .services-intro {
+        padding: 30px 0;
+    }
+    
+    .tech-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-list {
+        flex-wrap: wrap;
+    }
+    
+    .tech-tag {
+        margin-bottom: 10px;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+        max-width: 100%;
+    }
+}
+
+/* Estilos responsivos para la página de proyectos */
+@media (max-width: 992px) {
+    .portfolio-filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        margin: 5px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .testimonial-slider {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-intro {
+        padding: 30px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    .project-image {
+        height: 220px;
+    }
+    
+    .testimonial-slider {
+        padding: 20px;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-filter .filter-btn {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+    
+    .project-tags .tag {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        margin: 2px;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .project-link {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ajustes adicionales para dispositivos pequeños */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .service-icon i,
+    .tech-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .cta-section .cta-content {
+        padding: 30px 20px;
+    }
+    
+    .cta-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
