@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Explora proyectos destacados de Example - Casos de éxito en desarrollo web, aplicaciones móviles y soluciones tecnológicas para diversos sectores">
+    <meta name="keywords" content="portfolio, proyectos destacados, aplicaciones web, desarrollo móvil">
+    <meta name="author" content="Example">
+    <title>Proyectos | Example</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#000000">
+</head>
+<body>
+    <div class="cursor"></div>    <div class="loader">
+        <div class="loader-content">
+            <h2>EXAMPLE</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div><header>        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 50 50" aria-hidden="true">
+                <polygon points="25,5 45,25 25,45 5,25" fill="none" stroke="currentColor" stroke-width="2"></polygon>
+                <circle cx="25" cy="25" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle>
+            </svg>
+            <h1>Example</h1>
+        </div>
+        <nav aria-label="Navegación principal">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menú de navegación">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li data-animation="fade-down" data-delay="100"><a href="index.html">Inicio</a></li>
+                <li data-animation="fade-down" data-delay="200"><a href="about.html">Nosotros</a></li>
+                <li data-animation="fade-down" data-delay="300"><a href="services.html">Servicios</a></li>
+                <li data-animation="fade-down" data-delay="400"><a href="portfolio.html" aria-current="page">Proyectos</a></li>
+                <li data-animation="fade-down" data-delay="500"><a href="contact.html">Contacto</a></li>
+            </ul>        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2 class="section-title" data-animation="fade-up">Nuestros Proyectos</h2>
+        </section>
+
+        <section class="portfolio-intro">
+            <div class="container">
+                <p class="section-intro" data-animation="fade-up">
+                    Descubre algunos de nuestros trabajos más destacados y cómo hemos ayudado a empresas 
+                    a transformar sus negocios a través de soluciones digitales innovadoras.
+                </p>
+                
+                <div class="portfolio-filter" data-animation="fade-up">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                    <button class="filter-btn" data-filter="mobile">Apps Móviles</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud Services</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card" data-category="web" data-animation="fade-up" data-delay="100">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Visitar Sitio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>EcoMerge - Plataforma Sustentable</h3>
+                            <p>Desarrollo de plataforma web para conectar negocios sustentables con consumidores conscientes.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="project-card" data-category="mobile" data-animation="fade-up" data-delay="200">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Descargar App</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FitTracker - App de Fitness</h3>
+                            <p>Aplicación móvil para seguimiento personalizado de rutinas de ejercicio y nutrición.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 3 -->
+                    <div class="project-card" data-category="cloud" data-animation="fade-up" data-delay="300">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Caso de Estudio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>CloudFlow - Sistema de Gestión</h3>
+                            <p>Infraestructura cloud para empresa logística con procesamiento en tiempo real de datos.</p>
+                            <div class="project-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 4 -->
+                    <div class="project-card" data-category="web" data-animation="fade-up" data-delay="400">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Visitar Sitio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>ArtGallery - Marketplace de Arte</h3>
+                            <p>Plataforma e-commerce para artistas independientes, con sistema de subastas y pagos integrados.</p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 5 -->
+                    <div class="project-card" data-category="mobile" data-animation="fade-up" data-delay="500">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Descargar App</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>LocalGuide - Turismo Local</h3>
+                            <p>App de guías turísticas locales con realidad aumentada y contenido generado por usuarios.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">AR Kit</span>
+                                <span class="tag">Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 6 -->
+                    <div class="project-card" data-category="cloud" data-animation="fade-up" data-delay="600">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <div class="animated-shape"></div>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Detalle</a>
+                                    <a href="#" class="project-link">Caso de Estudio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>DataInsight - Plataforma de Análisis</h3>
+                            <p>Sistema de análisis de datos empresariales con dashboards personalizados e IA predictiva.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">GCP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <div class="container">
+                <h3 class="sub-title" data-animation="fade-up">Lo que dicen nuestros clientes</h3>
+                
+                <div class="testimonial-slider" data-animation="fade-up">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Novure transformó por completo nuestra presencia en línea. Su enfoque estratégico y atención al detalle nos ha permitido aumentar nuestra base de clientes en un 40% en solo seis meses."</p>
+                            <div class="client-info">
+                                <div class="client-name">María Rodríguez</div>
+                                <div class="client-position">CEO, EcoMerge</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content" data-animation="fade-up">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Estamos listos para convertir tus ideas en realidad. Contáctanos y comencemos a trabajar juntos.</p>
+                    <a href="contact.html" class="btn btn-primary">Iniciar Proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="30" height="30" viewBox="0 0 50 50">
+                        <polygon points="25,5 45,25 25,45 5,25" fill="none" stroke="currentColor" stroke-width="2"></polygon>
+                        <circle cx="25" cy="25" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                    </svg>
+                    <h3>Example</h3>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Enlaces</h4>
+                        <ul class="footer-nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="services.html">Servicios</a></li>
+                            <li><a href="portfolio.html">Proyectos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> <span>info@example.com</span></li>
+                            <li><i class="fas fa-phone"></i> <span>+34 123 456 789</span></li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span>Madrid, España</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Social</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Example. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

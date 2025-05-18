@@ -1,0 +1,213 @@
+/* Estilos adicionales para hacer los iconos responsivos */
+
+/* Ajustes para iconos flotantes */
+.hero .container {
+  flex-wrap: wrap !important;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1 1 100%;
+  order: 1;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-image {
+  flex: 1 1 100%;
+  position: relative;
+  height: auto;
+  order: 2;
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+/* Mover los iconos debajo del contenido en modo responsivo */
+@media (max-width: 1024px) {
+  .floating-elements {
+    position: relative;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .element {
+    opacity: 0.7;
+    position: relative !important;
+    margin: 0 15px;
+    display: inline-block;
+    animation: float-static 3s ease-in-out infinite !important;
+    transform: none !important;
+  }
+  
+  @keyframes float-static {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 150px;
+  }
+  
+  .floating-elements {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .element {
+    font-size: 2.5rem;
+    position: static !important;
+    margin: 0 20px;
+    top: auto !important;
+    left: auto !important;
+    display: inline-block;
+  }
+  
+  /* Mejora del efecto glitch para evitar problemas de texto duplicado */
+  .glitch::before,
+  .glitch::after {
+    animation-duration: 2s !important;
+    clip-path: inset(0 0 0 0) !important;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 120px;
+  }
+  
+  .element {
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+  
+  .floating-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+    .glitch::before,
+  .glitch::after {
+    display: none !important; /* Ocultar completamente en móviles para evitar duplicación */
+  }
+  
+  .glitch {
+    text-shadow: 1px 1px 2px var(--accent-color);
+    animation: simple-glitch 1.5s infinite alternate-reverse;
+  }
+  
+  @keyframes simple-glitch {
+    0%, 100% { 
+      transform: translate(0);
+      text-shadow: 1px 1px 2px var(--accent-color);
+    }
+    33% {
+      transform: translate(-1px, 1px);
+      text-shadow: -1px -1px 2px var(--accent-color);
+    }
+    66% {
+      transform: translate(1px, -1px);
+      text-shadow: 2px -1px 2px var(--accent-color);
+    }
+  }
+}
+
+/* Clase específica para layout móvil de elementos flotantes */
+.floating-elements.mobile-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 100px;
+  margin: 20px auto;
+}
+
+.floating-elements.mobile-layout .element {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  display: inline-block;
+  margin: 10px;
+  transform: none !important;
+  animation: float-static 3s ease-in-out infinite !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Estilos para dispositivos ultrapequeños */
+@media (max-width: 375px) {
+  .floating-elements.mobile-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  
+  .floating-elements.mobile-layout .element {
+    margin: 5px;
+    font-size: 1.8rem;
+  }
+}
+
+/* Estilos para dispositivos táctiles */
+@media (pointer: coarse) {
+  .element {
+    cursor: default;
+    animation: float-static 3s ease-in-out infinite !important;
+    transform: none !important;
+  }
+}
+
+/* Asegurar que los elementos flotantes no tengan estilos de cuadrado en ninguna vista */
+.element {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  text-align: center !important;
+}
+
+/* Asegurar que los iconos dentro de elementos flotantes no tengan estilos adicionales */
+.element i {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  display: inline-block !important;
+}
+
+/* Ajustes para el botón del menú sin fondo blanco */
+.menu-toggle {
+  background: transparent !important;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
